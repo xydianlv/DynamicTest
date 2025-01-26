@@ -1,4 +1,4 @@
-Android 项目，在子模块中集成 RN 流程
+Android 项目，在子模块中集成 RN 流程:
 
 * 配置 RN 开发环境
   必须安装的依赖有：Node、JDK、Android-SDK，Android 开发环境下默认支持 JDK、Android-SDK，只需要配置 Node 即可

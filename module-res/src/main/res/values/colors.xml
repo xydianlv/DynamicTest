@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--透明-->
+    <color name="color_empty">#00000000</color>
+    <!--白色-->
+    <color name="color_white">#FFFFFFFF</color>
+    <!--黑色-->
+    <color name="color_black">#FF000000</color>
+    <!--灰色-->
+    <color name="color_gray">#FF84919b</color>
+
+    <!-- color_text_1 重要文字颜色，一般为导航栏标题、Toolbar标题、帖子内容 -->
+    <color name="ct_1">#FF333333</color>
+    <!-- color_text_2 次重要文字颜色，一般为用户名、话题名 -->
+    <color name="ct_2">#FF666666</color>
+    <!-- color_text_3 辅助信息 -->
+    <color name="ct_3">#FF999999</color>
+
+    <!--线条-->
+    <color name="color_line">#FFE8E8E8</color>
+    <!--提示-->
+    <color name="color_alert">#FF44C88F</color>
+
+</resources>

@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    // settings.gradle 里配置的是 FAIL_ON_PROJECT_REPOS，Flutter 插件又单独设置了 repository，所以会构建报错，因此需要把 FAIL_ON_PROJECT_REPOS 改成 PREFER_PROJECT
+    // 因为 gradle 调整，Android 仓库配置都在 settings.gradle 中，但是因为设置了 PREFER_PROJECT，settings.gradle 就会被忽略了
+    // 需要在项目 build.gradle 中加上 settings.gradle 中的所有仓库，成功解决问题并编译安装成功
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "DynamicTest"
+include ':app'
+include ':module-jar'
+include ':module-api'
+include ':module-res'
+include ':module-flu:module_org'
+include ':module-rn:module-ard'
+include ':module-dsl:module-litho'
+
+setBinding(new Binding([gradle: this]))
+evaluate(new File(settingsDir, "module-flu/module_dart/.android/include_flutter.groovy"))
+
+includeBuild('./module-rn/module_nod/node_modules/@react-native/gradle-plugin')

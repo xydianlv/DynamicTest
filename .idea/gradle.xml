@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$USER_HOME$/Application/Flutter/flutter/packages/flutter_tools/gradle" name="gradle">
+                <projects>
+                  <project path="$USER_HOME$/Application/Flutter/flutter/packages/flutter_tools/gradle" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/module-rn/module_nod/node_modules/@react-native/gradle-plugin" name="react-native-gradle-plugin">
+                <projects>
+                  <project path="$PROJECT_DIR$/module-rn/module_nod/node_modules/@react-native/gradle-plugin" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$USER_HOME$/Application/Flutter/flutter/packages/flutter_tools/gradle" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/module-api" />
+            <option value="$PROJECT_DIR$/module-dsl" />
+            <option value="$PROJECT_DIR$/module-dsl/module-litho" />
+            <option value="$PROJECT_DIR$/module-flu" />
+            <option value="$PROJECT_DIR$/module-flu/module_dart/.android/Flutter" />
+            <option value="$PROJECT_DIR$/module-flu/module_org" />
+            <option value="$PROJECT_DIR$/module-jar" />
+            <option value="$PROJECT_DIR$/module-res" />
+            <option value="$PROJECT_DIR$/module-rn" />
+            <option value="$PROJECT_DIR$/module-rn/module-ard" />
+            <option value="$PROJECT_DIR$/module-rn/module_nod/node_modules/@react-native/gradle-plugin" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
